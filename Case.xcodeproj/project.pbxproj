@@ -13,6 +13,7 @@
 		CD2242D320DA92D800DB8F20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2242D220DA92D800DB8F20 /* Assets.xcassets */; };
 		CD2242D620DA92D800DB8F20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2242D420DA92D800DB8F20 /* LaunchScreen.storyboard */; };
 		CD2242E020DBF76700DB8F20 /* TouchIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2242DF20DBF76700DB8F20 /* TouchIDViewController.swift */; };
+		CD2242E220DD55AC00DB8F20 /* LegalAidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2242E120DD55AC00DB8F20 /* LegalAidViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CD2242D520DA92D800DB8F20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD2242D720DA92D800DB8F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD2242DF20DBF76700DB8F20 /* TouchIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIDViewController.swift; sourceTree = "<group>"; };
+		CD2242E120DD55AC00DB8F20 /* LegalAidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalAidViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				CD2242D220DA92D800DB8F20 /* Assets.xcassets */,
 				CD2242D420DA92D800DB8F20 /* LaunchScreen.storyboard */,
 				CD2242D720DA92D800DB8F20 /* Info.plist */,
+				CD2242E120DD55AC00DB8F20 /* LegalAidViewController.swift */,
 			);
 			path = Case;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD2242CE20DA92D800DB8F20 /* ViewController.swift in Sources */,
+				CD2242E220DD55AC00DB8F20 /* LegalAidViewController.swift in Sources */,
 				CD2242E020DBF76700DB8F20 /* TouchIDViewController.swift in Sources */,
 				CD2242CC20DA92D800DB8F20 /* AppDelegate.swift in Sources */,
 			);

@@ -26,10 +26,10 @@ class ViewController: UIViewController {
     
     @IBAction func showMessage(sender: UIButton) {
         switch sender {
-        case LoginButton:
-            let LoginButton = UIAlertController(title: "Log In:", message: "This will link to TouchID page", preferredStyle: UIAlertControllerStyle.alert)
-            LoginButton.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default))
-            present(LoginButton, animated: true, completion: nil)
+        case RegisterButton:
+            let RegisterButton = UIAlertController(title: "Register:", message: "This will link to the registration page", preferredStyle: UIAlertControllerStyle.alert)
+            RegisterButton.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default))
+            present(RegisterButton, animated: true, completion: nil)
             
         default:
             break

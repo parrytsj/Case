@@ -1,41 +1,28 @@
 //
-//  TouchIDViewController.swift
+//  LegalAidViewController.swift
 //  Case
 //
-//  Created by Thomas Parry on 21/06/2018.
+//  Created by Thomas Parry on 22/06/2018.
 //  Copyright © 2018 Thomas Parry. All rights reserved.
 //
 
 import UIKit
-import LocalAuthentication
 
-class TouchIDViewController: UIViewController {
+class LegalAidViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Do any additional setup after loading the view.
+            navigationController?.setNavigationBarHidden (false, animated: .init())
 
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        //Hide the Navigation Controller
-        navigationController?.setNavigationBarHidden (true, animated: .init())
-    }
-        
-        
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    func showAlertController(_messsage:String) {
-        let alertController = UIAlertController(title: nil, message: "message", preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(alertController, animated: true, completion: nil)
-    }
 
     /*
     // MARK: - Navigation
@@ -46,4 +33,5 @@ class TouchIDViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 }
