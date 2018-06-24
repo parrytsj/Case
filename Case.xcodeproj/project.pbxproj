@@ -16,6 +16,7 @@
 		CDB5BE3020DE58A8000F9064 /* LegalAidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5BE2F20DE58A8000F9064 /* LegalAidViewController.swift */; };
 		CDB5BE3220DEB59B000F9064 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5BE3120DEB59B000F9064 /* ServiceTableViewCell.swift */; };
 		CDB5BE3420DECBED000F9064 /* DivorceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5BE3320DECBED000F9064 /* DivorceViewController.swift */; };
+		CDB5BE3620DFAFE7000F9064 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5BE3520DFAFE7000F9064 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CDB5BE2F20DE58A8000F9064 /* LegalAidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalAidViewController.swift; sourceTree = "<group>"; };
 		CDB5BE3120DEB59B000F9064 /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
 		CDB5BE3320DECBED000F9064 /* DivorceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivorceViewController.swift; sourceTree = "<group>"; };
+		CDB5BE3520DFAFE7000F9064 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				CD2242D720DA92D800DB8F20 /* Info.plist */,
 				CDB5BE2F20DE58A8000F9064 /* LegalAidViewController.swift */,
 				CDB5BE3120DEB59B000F9064 /* ServiceTableViewCell.swift */,
+				CDB5BE3520DFAFE7000F9064 /* DetailViewController.swift */,
 			);
 			path = Case;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				CD2242E020DBF76700DB8F20 /* TouchIDViewController.swift in Sources */,
 				CDB5BE3220DEB59B000F9064 /* ServiceTableViewCell.swift in Sources */,
 				CD2242CC20DA92D800DB8F20 /* AppDelegate.swift in Sources */,
+				CDB5BE3620DFAFE7000F9064 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
