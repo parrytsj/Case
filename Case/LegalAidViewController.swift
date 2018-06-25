@@ -49,15 +49,6 @@ class LegalAidViewController: UIViewController, UITableViewDataSource, UITableVi
         // Pass the selected object to the new view controller.
     }
     */
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showFirmDetail" {
-            if let indexPath = tableView.indexPathForSelectedRow {
-                let destinationController = segue.destination as! DetailViewController
-                destinationController.descriptionLabel = description[indexPath.row]
-            }
-        }
-    }
 
     var firmNames = ["Firm 1", "Firm 2", "Firm 3", "Firm 4", "Firm 5", "Firm 6", "Firm 7", "Firm 8"]
     var location = ["## miles", "## miles", "## miles", "## miles", "## miles", "## miles", "## miles", "## miles"]
