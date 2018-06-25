@@ -314,7 +314,7 @@ We don’t charge you a penny. Our services are completely free, instead we are 
                                             <outlet property="distanceLabel" destination="UYb-bL-dqU" id="sld-mC-mvy"/>
                                             <outlet property="nameLabel" destination="Uvu-7k-e9s" id="HYD-ps-lOe"/>
                                             <outlet property="thumbnailImageView" destination="wCr-JD-5dZ" id="cHg-68-Ukm"/>
-                                            <segue destination="ov2-t8-dKs" kind="show" id="ewi-rO-iXU"/>
+                                            <segue destination="ov2-t8-dKs" kind="show" identifier="showFirmDetail" id="ewi-rO-iXU"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
