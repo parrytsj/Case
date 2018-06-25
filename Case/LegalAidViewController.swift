@@ -21,6 +21,7 @@ class LegalAidViewController: UIViewController, UITableViewDataSource, UITableVi
         cell.nameLabel.text = firmNames[indexPath.row]
         cell.distanceLabel.text = location[indexPath.row]
         cell.descriptionLabel.text = descriptionNames[indexPath.row]
+        cell.imageView?.image = UIImage(named: "restaurant")
         return cell
     }
     
