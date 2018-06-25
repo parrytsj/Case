@@ -314,7 +314,7 @@ We don’t charge you a penny. Our services are completely free, instead we are 
                                             <outlet property="distanceLabel" destination="UYb-bL-dqU" id="sld-mC-mvy"/>
                                             <outlet property="nameLabel" destination="Uvu-7k-e9s" id="HYD-ps-lOe"/>
                                             <outlet property="thumbnailImageView" destination="wCr-JD-5dZ" id="cHg-68-Ukm"/>
-                                            <segue destination="ov2-t8-dKs" kind="show" id="ewi-rO-iXU"/>
+                                            <segue destination="ov2-t8-dKs" kind="show" identifier="showFirmDetail" id="ewi-rO-iXU"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -390,8 +390,34 @@ We don’t charge you a penny. Our services are completely free, instead we are 
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="C78-D7-HRq">
+                                <rect key="frame" x="112" y="642" width="150" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2s-R2-A9h">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                                        <color key="backgroundColor" red="0.2400181991" green="0.23953537890000001" blue="0.58533031089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Reviews">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIT-IR-ysV">
+                                        <rect key="frame" x="0.0" y="40" width="150" height="30"/>
+                                        <color key="backgroundColor" red="0.2400181991" green="0.23953537890000001" blue="0.58533031089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Contact">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="DXV-35-xeO" kind="show" id="eVW-tq-YDb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="D0b-qL-p4q"/>
+                                </constraints>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXl-AP-ZFf">
-                                <rect key="frame" x="48" y="390" width="278" height="138"/>
+                                <rect key="frame" x="48" y="361" width="278" height="219"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -404,24 +430,44 @@ We don’t charge you a penny. Our services are completely free, instead we are 
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIT-IR-ysV">
-                                <rect key="frame" x="160" y="684" width="55" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Contact"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2s-R2-A9h">
-                                <rect key="frame" x="159" y="646" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Reviews"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="B2A-9Y-TKR" firstAttribute="trailing" secondItem="C78-D7-HRq" secondAttribute="trailing" constant="113" id="0ZZ-f4-kVv"/>
+                            <constraint firstItem="C78-D7-HRq" firstAttribute="leading" secondItem="B2A-9Y-TKR" secondAttribute="leading" constant="112" id="Lsc-fu-nQ0"/>
+                            <constraint firstItem="B2A-9Y-TKR" firstAttribute="bottom" secondItem="C78-D7-HRq" secondAttribute="bottom" constant="66" id="vd5-v8-LZt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="B2A-9Y-TKR"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3dS-RT-eD3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2396" y="132.26600985221674"/>
+        </scene>
+        <!--ContactViewController-->
+        <scene sceneID="i2h-Wg-tBK">
+            <objects>
+                <viewController title="ContactViewController" id="DXV-35-xeO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GGO-rh-xfp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yyt-Hc-oRh">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qbL-am-NvU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QLm-gi-Ocv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3077.5999999999999" y="132.26600985221674"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2a5-qn-fJm">

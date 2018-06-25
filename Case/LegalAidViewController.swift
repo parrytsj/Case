@@ -21,6 +21,7 @@ class LegalAidViewController: UIViewController, UITableViewDataSource, UITableVi
         cell.nameLabel.text = firmNames[indexPath.row]
         cell.distanceLabel.text = location[indexPath.row]
         cell.descriptionLabel.text = descriptionNames[indexPath.row]
+        cell.imageView?.image = UIImage(named: "restaurant")
         return cell
     }
     
@@ -44,11 +45,8 @@ class LegalAidViewController: UIViewController, UITableViewDataSource, UITableVi
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+ */
+
 
     var firmNames = ["Firm 1", "Firm 2", "Firm 3", "Firm 4", "Firm 5", "Firm 6", "Firm 7", "Firm 8"]
     var location = ["## miles", "## miles", "## miles", "## miles", "## miles", "## miles", "## miles", "## miles"]

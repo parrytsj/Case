@@ -17,6 +17,7 @@
 		CDB5BE3220DEB59B000F9064 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5BE3120DEB59B000F9064 /* ServiceTableViewCell.swift */; };
 		CDB5BE3420DECBED000F9064 /* DivorceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5BE3320DECBED000F9064 /* DivorceViewController.swift */; };
 		CDB5BE3620DFAFE7000F9064 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5BE3520DFAFE7000F9064 /* DetailViewController.swift */; };
+		CDB5BE3820E139DC000F9064 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5BE3720E139DC000F9064 /* ContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CDB5BE3120DEB59B000F9064 /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
 		CDB5BE3320DECBED000F9064 /* DivorceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivorceViewController.swift; sourceTree = "<group>"; };
 		CDB5BE3520DFAFE7000F9064 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CDB5BE3720E139DC000F9064 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				CDB5BE2F20DE58A8000F9064 /* LegalAidViewController.swift */,
 				CDB5BE3120DEB59B000F9064 /* ServiceTableViewCell.swift */,
 				CDB5BE3520DFAFE7000F9064 /* DetailViewController.swift */,
+				CDB5BE3720E139DC000F9064 /* ContactViewController.swift */,
 			);
 			path = Case;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD2242CE20DA92D800DB8F20 /* ViewController.swift in Sources */,
+				CDB5BE3820E139DC000F9064 /* ContactViewController.swift in Sources */,
 				CDB5BE3420DECBED000F9064 /* DivorceViewController.swift in Sources */,
 				CDB5BE3020DE58A8000F9064 /* LegalAidViewController.swift in Sources */,
 				CD2242E020DBF76700DB8F20 /* TouchIDViewController.swift in Sources */,
